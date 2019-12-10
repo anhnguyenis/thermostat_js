@@ -7,30 +7,42 @@
 </head>
 
 <body>
-  <section><h1>Current temperature in <span id="city-name"></span> <span id="current-temperature">20</span> °C</h1>
-    <!-- <select id="current-city"
-     <option value="london">London</option>
-     <option value="newyork">New York</option>
-     <option value="paris">Paris</option>
-     <option value="tokyo">Tokyo</option>
-   </select> -->
-   <form id="select-city">
-     <input id="current-city" type="text" placeholder="Enter a city"></input>
-     <input type="submit"></input>
-   </form>
-  </section>
+
+  <div id="main" class="fancy">
+      <div class="current-temperature"
+        <h1>Current temperature in </h1>
+      </div>
+
+      <div class="box">
+        <h1>
+          <span id="city-name"></span>
+          <span id="country-name"></span>:
+          <span id="current-temperature">20</span> °C
+        </h1>
+      </div>
+
+    <section>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city"></input>
+        <input type="submit"></input>
+      </form>
+    </section>
 
   <section>
     <h1 id="temperature"></h1>
-      <button id="temperature-up">+</button>
-      <button id="temperature-down">-</button>
-      <button id="temperature-reset">Reset</button>
-      <p>Power saving mode is <span id="powersaving-status">on</span></p>
-      <button id="powersaving-on">PSM On</button>
-      <button id="powersaving-off">PSM Off</button>
+    <div class="temperature-buttons">
+        <button id="temperature-up">+</button>
+        <button id="temperature-down">-</button>
+        <button id="temperature-reset">Reset</button>
+    </div>
+        <p class="psm">Power saving mode is <span id="powersaving-status">on</span></p>
+        <button id="powersaving-on">PSM On</button>
+        <button id="powersaving-off">PSM Off</button>
   </section>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="src/thermostat.js"></script>
   <script src="src/interface.js"></script>
+</div>
 </body>
 </html>

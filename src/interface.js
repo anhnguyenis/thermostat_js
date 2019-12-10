@@ -49,6 +49,7 @@ function displayWeather(city) {           //refactored code
   $.get(url + token + units, function(data) {
     $('#current-temperature').text(data.main.temp);
     $('#city-name').text(data.name);
+    $('#country-name').text(data.sys.country);
   })
 }
 
